@@ -10,6 +10,10 @@ namespace Todo.Services
     public class TodoRespository : ITodo
     {
         private readonly TodoDb db;
+        public TodoRespository(TodoDb db)
+        {
+            this.db = db;
+        }
         public IEnumerable<Tasks> GetTasks
         {
             get
