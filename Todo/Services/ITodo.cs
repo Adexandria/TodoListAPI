@@ -18,7 +18,7 @@ namespace Todo.Services
         Task<Tasks> Add(Tasks task);
 
         //update task
-        Task<Tasks> Update(Tasks task);
+        Tasks Update(Tasks task);
 
         //Delete task by id
         Task<int> Delete(Guid id);
