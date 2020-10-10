@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Todo.Entity;
 
 namespace Todo.Services
 {
@@ -12,5 +13,6 @@ namespace Todo.Services
         {
 
         }
+        public DbSet<Tasks> Tasks { get; set; }
     }
 }
